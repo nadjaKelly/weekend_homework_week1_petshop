@@ -56,7 +56,7 @@ def find_pet_by_name(store_name, pet_name)
   for one_element in store_name[:pets]
     return one_element if one_element[:name] == pet_name
   end
-
+return nil
 end
 
 ############
