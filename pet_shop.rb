@@ -20,3 +20,6 @@ end
 ############
 
 #4
+def pets_sold(store_name)
+  return store_name[:admin][:pets_sold]
+end
