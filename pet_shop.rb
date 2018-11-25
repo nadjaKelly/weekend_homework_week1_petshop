@@ -56,9 +56,13 @@ def find_pet_by_name(store_name, pet_name)
   for one_element in store_name[:pets]
     return one_element if one_element[:name] == pet_name
   end
-return nil
+  return nil
 end
 
 ############
 #9
-# def
+ def remove_pet_by_name(store_name, pet_name)
+   for one_element in store_name[:pets]
+     store_name[:pets].delete(one_element) if one_element[:name] == pet_name
+   end
+ end
