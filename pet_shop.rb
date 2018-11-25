@@ -9,3 +9,14 @@
 def total_cash(store_name)
   return store_name[:admin][:total_cash]
 end
+
+############
+
+#3
+def add_or_remove_cash(store_name, amount_to_add)
+  return store_name[:admin][:total_cash] += amount_to_add
+end
+
+############
+
+#4
