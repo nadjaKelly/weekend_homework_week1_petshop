@@ -6,3 +6,6 @@
   ##########
 
 #2
+def total_cash(store_name)
+  return store_name[:admin][:total_cash]
+end
