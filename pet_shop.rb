@@ -90,3 +90,15 @@ end
 def customer_pet_count(customer_name)
   return customer_name[:pets].count
 end
+
+###############
+def add_pet_to_customer(customer_name, new_pet)
+  return customer_name[:pets].push(new_pet)
+end
+
+
+# def test_add_pet_to_customer
+#   customer = @customers[0]
+#   add_pet_to_customer(customer, @new_pet)
+#   assert_equal(1, customer_pet_count(customer))
+# end
