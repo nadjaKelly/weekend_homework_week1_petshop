@@ -103,3 +103,8 @@ end
 #   assert_equal(1, customer_pet_count(customer))
 # end
 ################
+def customer_can_afford_pet(customer_name, pet_price)
+  return customer_name[:cash] >= pet_price[:price]
+end
+
+#################
