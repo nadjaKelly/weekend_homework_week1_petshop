@@ -40,12 +40,25 @@ end
 
 ################
 
-# #7
-def pets_by_breed(shop_name, kind_of_animal)
+#7
+def pets_by_breed(store_name, kind_of_animal)
   breeds_retrieved = []
-  for one_element in shop_name[:pets]
+  for one_element in store_name[:pets]
     breeds_retrieved.push(one_element) if one_element[:breed] == kind_of_animal
   end
   return breeds_retrieved
   end
-  
+
+  ############
+
+#8
+def find_pet_by_name(store_name, pet_name)
+  for one_element in store_name[:pets]
+    return one_element if one_element[:name] == pet_name
+  end
+
+end
+
+############
+#9
+# def
