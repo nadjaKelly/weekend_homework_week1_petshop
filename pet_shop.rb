@@ -1,46 +1,46 @@
-  #1
-  def pet_shop_name(store_name)
-    return store_name[:name]
-  end
+
+def pet_shop_name(store_name)
+  return store_name[:name]
+end
 
   ##########
 
-#2
+
 def total_cash(store_name)
   return store_name[:admin][:total_cash]
 end
 
 ############
 
-#3
+
 def add_or_remove_cash(store_name, amount_to_add)
   return store_name[:admin][:total_cash] += amount_to_add
 end
 
 ############
 
-#4
+
 def pets_sold(store_name)
   return store_name[:admin][:pets_sold]
 end
 
 #############
 
-#5
+
 def increase_pets_sold(store_name, sold_pet_amount)
   return store_name[:admin][:pets_sold] += sold_pet_amount
 end
 
 ###############
 
-#6
+
 def stock_count(store_name)
   return store_name[:pets].length
 end
 
 ################
 
-#7
+
 def pets_by_breed(store_name, kind_of_animal)
   breeds_retrieved = []
   for one_element in store_name[:pets]
@@ -51,7 +51,7 @@ def pets_by_breed(store_name, kind_of_animal)
 
   ############
 
-#8
+
 def find_pet_by_name(store_name, pet_name)
   for one_element in store_name[:pets]
     return one_element if one_element[:name] == pet_name
@@ -60,9 +60,22 @@ def find_pet_by_name(store_name, pet_name)
 end
 
 ############
-#9
+
  def remove_pet_by_name(store_name, pet_name)
    for one_element in store_name[:pets]
      store_name[:pets].delete(one_element) if one_element[:name] == pet_name
    end
  end
+
+##########
+  def add_pet_to_stock(store_name, new_pet_addition)
+    store_name[:pets].push(new_pet_addition)
+  end
+
+########
+
+
+
+def customer_cash(customer)
+  return customer[:cash]
+end
